@@ -1,0 +1,32 @@
+/* hoja de estilos de css */
+
+/* tipos de selectores */ 
+/* selector de etiqueta */
+h1 {
+    /* propiedad y valor;*/
+    color: #314157; /* Cambiar color letra*/
+}
+body{
+    background-color: #6e8bb3;
+}
+/* selector de clase 
+/* generar  clases con las propiedades deseadas */
+/* solo pueden usarse en elementos que tengan esa clase*/
+.tipo-de-letra{
+
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 100px; /* tamaño de letra*/
+
+}
+/* selector de id */ 
+/*   */
+#titulo-principal{
+    color: #4b4e50;
+}
+/* Display: flex 
+hace que lo hijos elementos se organizen en filas o columnas dependiendo del valor de flex
+siempre el flex modifica contenedores */
+.contenedor{
+ display: flex;
+ justify-content: center ; 
+}

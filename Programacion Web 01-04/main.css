@@ -1,0 +1,60 @@
+/* hoja de estilos de css */
+
+/* tipos de selectores */ 
+/* selector de etiqueta */
+/* --- Selectores de Etiqueta --- */
+h1 {
+    color: #314157; 
+}
+
+body {
+    background-color: #6e8bb3;
+}
+
+/* --- Selectores de Clase --- */
+.tipo-de-letra {
+    font-family: 'Georgia', serif;
+    font-size: 40px; 
+}
+
+/* --- Selectores de ID --- */
+#titulo-principal {
+    color: #4b4e50;
+}
+
+/* --- Estructura del Header --- */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;            /* Pone el bloque de pelis al lado del de animales */
+    justify-content: space-between; /* Separa los dos bloques a los extremos */
+      /* Los alinea arriba = align-items: flex-start;    */
+    gap: 20px;                      /* Espacio entre los dos bloques grandes */
+    padding: 20px;
+}
+
+.bloque-peliculas {
+    display: flex;
+    flex-direction: row; /* Las peliculas se quedan en fila */
+    gap: 20px;
+        /* Si no caben, bajan solas  flex-wrap: wrap; */
+}
+
+/* --- Bloque de Animales y Link (Derecha) --- */
+.bloque-derecha {
+    display: flex;
+    flex-direction: column; /*columna/*
+    /* Centra el link debajo de los animales = align-items: center;  */
+    gap: 15px;              /* Espacio vertical entre ellos */
+}
+
+/* --- Estilo de Imágenes --- */
+img {
+    max-width: 200px;    
+    border-radius: 10px;
+}
