@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+  background-color: #f5f0e6; /* beige cálido */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #724938; /* café oscuro */
+  color: #f5f0e6;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  width: 60%;        
+  margin: 20px auto; /* espacio arriba y abajo */
+  padding: 20px;
+}
+
+form section {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #3e2c1c; /* marrón suave */
+}
+
+input, select, textarea, button {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #31271c; /* borde marrón claro */
+  background-color: #fffaf3; /* tono papel */
+}
+
+button {
+  background-color: #8b5e3c; /* café medio */
+  color: #f5f0e6;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #6b4f3a; /* café más oscuro */
+}
+
+
+.pelicula-opcion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #a68a6d;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fffaf3;
+}
+
+.pelicula-opcion img {
+  margin: 0 15px;
+  border-radius: 5px;
+}
+
+
+
+/* Horarios */
+.horario-opcion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+/* Opciones extra */
+.opcion-extra {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
