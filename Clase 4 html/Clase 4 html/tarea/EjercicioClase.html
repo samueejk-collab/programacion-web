@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librería ETEC</title>
+  </head>
+  <body>
+    <header>
+      <h1>Librería ETEC</h1>
+      <p>Realice su pedido online</p>
+    </header>
+    <main>
+      <form>
+        <section>
+          <h2>Datos del cliente</h2>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" />
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" />
+        </section>
+
+        <section>
+          <h3>Formato del libro:</h3>
+          <label for="fisico">Físico</label>
+          <input type="radio" id="fisico" name="formato" value="fisico" />
+
+          <label for="ebook">E-book</label>
+          <input type="radio" id="ebook" name="formato" value="ebook" />
+        </section>
+
+        <section>
+          <h2>Géneros</h2>
+          <label for="novela">Novela</label>
+          <input type="checkbox" id="novela" name="genero_novela" value="novela" />
+
+          <label for="fantasia">Fantasía</label>
+          <input type="checkbox" id="fantasia" name="genero_fantasia" value="fantasia" />
+
+          <label for="ciencia">Ciencia</label>
+          <input type="checkbox" id="ciencia" name="genero_ciencia" value="ciencia" />
+        </section>
+
+        <section>
+          <label for="autor">Autor preferido</label>
+          <select id="autor" name="autor">
+            <option value="borges">Jorge Luis Borges</option>
+            <option value="cortazar">Julio Cortázar</option>
+            <option value="garcia_marquez">Gabriel García Márquez</option>
+            <option value="kafka">Franz Kafka</option>
+          </select>
+        </section>
+
+        <h2>Comentarios</h2>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="30" required></textarea>
+
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </main>
+    <footer>
+      <p>Librería ETEC </p>
+    </footer>
+  </body>
+</html>
