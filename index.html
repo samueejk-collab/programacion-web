@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Veterinaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Veterinaria</h1>
+    <p>Formulario de atención</p>
+  </header>
+
+  <main>
+    <form>
+      <section>
+        <h3>Datos del cliente</h3>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+      </section>
+
+      <section>
+        <h3>Datos de la mascota</h3>
+        <label for="mascota">Nombre de la mascota</label>
+        <input id="mascota" type="text" required>
+        <label for="especie">Especie</label>
+        <input id="especie" type="text">
+      </section>
+
+      <section>
+        <h3>Tipo de consulta</h3>
+        <div class="opcion-radio">
+          <input type="radio" id="consulta1" name="consulta" required>
+          <label for="consulta1">Vacunación</label>
+        </div>
+        <div class="opcion-radio">
+          <input type="radio" id="consulta2" name="consulta">
+          <label for="consulta2">Control general</label>
+        </div>
+      </section>
+
+      <section>
+        <h3>Servicios adicionales</h3>
+        <div class="opcion-checkbox">
+          <input type="checkbox" id="servicio1">
+          <label for="servicio1">Baño</label>
+        </div>
+        <div class="opcion-checkbox">
+          <input type="checkbox" id="servicio2">
+          <label for="servicio2">Corte de uñas</label>
+        </div>
+      </section>
+
+      <section>
+        <h3>Horario preferido</h3>
+        <label for="horario">Seleccionar horario</label>
+        <select id="horario" required>
+          <option value="">--Seleccione--</option>
+          <option>Mañana</option>
+          <option>Tarde</option>
+        </select>
+      </section>
+
+      <section>
+        <h3>Comentarios</h3>
+        <label for="comentarios">Observaciones</label>
+        <textarea id="comentarios"></textarea>
+      </section>
+
+      <p id="mensaje"></p>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Veterinaria ©</p>
+  </footer>
+</body>
+</html>
