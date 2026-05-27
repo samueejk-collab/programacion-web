@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    let resumen = `✅ Pedido recibido:\n
+    let resumen = ` Pedido recibido:\n
     Cliente: ${nombre} (${email})
     Mascota: ${mascota} (${especie})
     Consulta: ${consulta ? consulta.parentElement.textContent.trim() : "No seleccionada"}
