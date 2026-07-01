@@ -88,11 +88,44 @@ console.log(todosstock0);
 
 // Ejercicio 7
 
-const valorTotal = productos
-  .filter(p => p.stock > 0)
-  .reduce((suma, producto) => {
+const totalInventario = productos
+  .filter(p => p.stock > 0) 
+  .reduce((acc, p) => acc + (p.precio * p.stock), 0);
 
-    return suma + (producto.precio * producto.stock);
-  }, 0); 
+console.log(totalInventario);
 
-console.log(valorTotal);
+// Ejercicio 8
+
+const nombresFiltrados = productos
+  .filter(p => p.activo && p.stock > 0 && p.precio < 20000)
+  .map(p => p.nombre);
+
+console.log(nombresFiltrados);
+
+// Ejercicio 9
+
+const agrupadosPorCategoria = productos.reduce((resultado, producto) => {
+  if (producto.activo) {
+    resultado[producto.categoria] = (resultado[producto.categoria] || 0) + 1;
+  }
+  return resultado;
+}, {});
+
+console.log(agrupadosPorCategoria);
+
+// Ejercicio 10
+
+function resumirInventario(productos) {
+  return productos.reduce((resumen, producto) => {
+    resumen.total++;
+    if (producto.activo) resumen.activos++;
+    if (producto.stock === 0) resumen.sinStock++;
+    resumen.valorTotal += producto.precio * producto.stock;
+    resumen.categorias[producto.categoria] = (resumen.categorias[producto.categoria] || 0) + 1;
+    return resumen;
+  }, { total: 0, activos: 0, sinStock: 0, valorTotal: 0, categorias: {} });
+}
+
+console.log(resumirInventario(productos));
+
+
